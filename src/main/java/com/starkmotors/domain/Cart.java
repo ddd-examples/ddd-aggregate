@@ -54,7 +54,7 @@ public class Cart {
         updateTotal();
     }
 
-    public void addItem(Accessory accessory, int quantity) {
+    public void add(Accessory accessory, int quantity) {
         items.add(CartItem.forAccessory(accessory, quantity));
         updateTotal();
     }
