@@ -14,10 +14,13 @@ public class CarSalesApplication {
         //transaction start
         cart.add(seatCover, 1);
         System.out.println(cart.getTotalCost());
+
         cart.remove(seatCover.getAccessoryId());
         System.out.println(cart.getTotalCost());
+
         cart.add(alloyWheels, 4);
         System.out.println(cart.getTotalCost());
+
         cart.incrementQuantity(alloyWheels.getAccessoryId());
         System.out.println(cart.getTotalCost());
 
