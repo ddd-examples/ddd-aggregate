@@ -60,26 +60,3 @@ public class Cart {
     }
 }
 
-class CartId {
-    private UUID uuid;
-
-    public CartId(UUID uuid) {
-        this.uuid = uuid;
-    }
-
-    public static CartId newCarId() {
-        return new CartId(UUID.randomUUID());
-    }
-}
-
-class AccessoryId {
-    private UUID uuid;
-
-    public AccessoryId(UUID uuid) {
-        this.uuid = uuid;
-    }
-
-    public static AccessoryId newAccessoryId() {
-        return new AccessoryId(UUID.randomUUID());
-    }
-}
